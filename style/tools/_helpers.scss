@@ -1,22 +1,5 @@
-// Clear fix - include to the parent block to stop the float
-@mixin clearfix {
-  &:after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
-}
 
-// Unselectable
-@mixin unselectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-// Place-holder
+// Styling a input-placeholer
 @mixin placeholder {
   $placeholders: ":-moz" ":-webkit-input" "-moz" "-ms-input";
   @each $placeholder in $placeholders {
@@ -26,7 +9,7 @@
   }
 }
 
-// Screen-fix
+// Screen-states
 @mixin screen-from($device) {
   @media screen and (min-width: $device) {
     @content;
@@ -56,20 +39,8 @@
     @content;
   }
 }
-//End Screen-fix
+//End Screen-states
 
-@mixin container{
 
-  margin: auto;
-  max-width: var(--container-max-size);
-}
-
-@mixin noselect{
-
-  -webkit-user-select: none; /* Safari 3.1+ */
-  -moz-user-select: none; /* Firefox 2+ */
-  -ms-user-select: none; /* IE 10+ */
-  user-select: none; /* Standard syntax */
-}
 
 

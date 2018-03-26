@@ -1,77 +1,23 @@
 :root {
-  --container-max-size: 1064px;
-  --topbar-type: flex-end;
-  --banner-height: 400px;
-  --header__info--width: 500px;
-  --header__info--order: 1;
-  --header__reg--order: 2;
-  --header__info--border-top: none;
-  --info__time--width: 200px;
-  --info__title--text-align: left;
-  --info__numb--width: 150px;
-  --info__bottom--grid-template-columns: auto auto;
-  --info__time--grid-row: 1/ span 2;
-  --color-fucker__1--color: #000;
-  --color-fucker__2--color: #000;
-  --contact-order: 3;
-  --domain-order: 1;
-  --phone-order: 2;
+  --container-max-size: 1128px;
   font-size: 20px; }
 
 @media screen and (max-width: 1023px) {
   :root {
-    --container-max-size: 896px;
-    --topbar-type: space-around;
-    --banner-height: 250px;
-    --header__info--width: 100%;
-    --header__info--order: 2;
-    --header__reg--order: 1;
-    --header__info--border-top: 1px solid #dedede;
-    --info__title--text-align: center;
-    --info__numb--width: 70px;
-    --info__time--width: 100%;
-    --info__bottom--grid-template-columns: auto;
-    --info__time--grid-row: auto;
-    --color-fucker__1--color: #f56c36;
-    --color-fucker__2--color: #e02d6f;
-    --contact-order: 1;
-    --domain-order: 3;
-    --phone-order: 2;
+    --container-max-size: 960px;
     font-size: 18px; } }
 @media screen and (max-width: 768px) {
   :root {
-    --container-max-size: 641px;
-    --banner-height: 200px;
+    --container-max-size: 705px;
     font-size: 14px; } }
-*:focus {
+*:focus, *:active {
   outline: none; }
 
-@font-face {
-  font-family: 'AvenyT';
-  src: url(../font/AvenyTLight.ttf); }
-@font-face {
-  font-family: 'AvenyTMedium';
-  src: url(../font/AvenyTMedium.ttf); }
-@font-face {
-  font-family: 'AvenyTRegular';
-  src: url(../font/AvenyTRegular.ttf); }
-@font-face {
-  font-family: 'GilroyLight';
-  src: url(../font/SVN-GilroyLight.otf); }
-@font-face {
-  font-family: 'GilroyBold';
-  src: url(../font/SVN-GilroyBold.otf); }
+* {
+  box-sizing: border-box; }
+
 body {
-  margin: 0;
-  background: url(../images/background.png);
-  background-size: cover;
-  font-family: 'GilroyLight', arial, helvetica, sans-serif; }
-
-h1, h2 {
-  font-family: 'AvenyT', sans-serif; }
-
-.font-gilroy-bold {
-  font-family: 'GilroyBold', sans-serif; }
+  margin: 0; }
 
 .c-navbar {
   display: flex;
@@ -140,14 +86,11 @@ h1, h2 {
     border: 1px solid #dedede;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
-    /* Safari 3.1+ */
     -moz-user-select: none;
-    /* Firefox 2+ */
     -ms-user-select: none;
-    /* IE 10+ */
     user-select: none;
-    /* Standard syntax */
     color: #000;
     text-transform: uppercase; }
   .c-modal--active {

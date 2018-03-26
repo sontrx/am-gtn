@@ -1,28 +1,30 @@
 
 // Break-point
-$mobile: 500px !default;
-$tablet: 769px !default;
+$mobile-s: 320px !default;
+$mobile: 375px !default;
+$mobile-l: 425px !default;
+$tablet: 768px !default;
 $desktop: 1024px !default;
-$widescreen: 1192px !default;
-$fullhd: 1400px !default;
-$gap: 64px;
+$desktop-l: 1440px !default;
+$gap: 32px;
 
-// Screen max-width
-$container-tablet: $desktop - (2*$gap);
-$container-desktop: $widescreen - (2*$gap);
-$container-mobile: $tablet - (2*$gap);
-$container-xs: $mobile - (2*$gap);
+// Container max-width
+$container-widescreen: $desktop-l - (2*$gap);
+$container-desktop: $desktop - (2*$gap);
+$container-tablet: $tablet - (2*$gap);
+$container-mobile: $mobile - (2*$gap);
 
 // Color
 $black: #000;
 $white: #fff;
 $cyan: #4ec5c1;
 $pink: #cc3366;
-$background: #eee;
-$shine-text: #c51230;
 $red: #f40103;
+
+$background: #eee;
 $border: #dedede;
-$text: #3c3c3c;
+
+$text-black: #3c3c3c;
 $text-light: #7d7d7d;
 
 
@@ -30,70 +32,25 @@ $text-light: #7d7d7d;
 
 :root{
 	
-
 	--container-max-size: #{$container-desktop};
-	// header
-	--topbar-type: flex-end;
-	--banner-height: 400px;
-	--header__info--width: 500px;
-	--header__info--order: 1;
-	--header__reg--order: 2;
-	--header__info--border-top: none;
-	// info
-	--info__time--width: 200px;
-	--info__title--text-align: left;
-	--info__numb--width: 150px;
-	--info__bottom--grid-template-columns: auto auto;
-	--info__time--grid-row: 1/ span 2;
-	--color-fucker__1--color: #{$black};
-	--color-fucker__2--color: #{$black};
-	// footer
-	--contact-order: 3;
-	--domain-order: 1;
-	--phone-order: 2;
-
-	// --info-time-width: auto;
 	font-size: 20px;
 }
 
 @include screen-until($desktop){
-	
+	// on tablet
 	:root{
 
 		--container-max-size: #{$container-tablet};
-		// header
-		--topbar-type: space-around;
-		--banner-height: 250px;
-		--header__info--width: 100%;
-		--header__info--order: 2;
-		--header__reg--order: 1;
-		--header__info--border-top: #{1px solid $border};
-		// info
-		--info__title--text-align: center;
-		--info__numb--width: 70px;
-		--info__time--width: 100%;
-		--info__bottom--grid-template-columns: auto;
-		--info__time--grid-row: auto;
-		--color-fucker__1--color: #f56c36;
-		--color-fucker__2--color: #e02d6f;
-		// footer
-		--contact-order: 1;
-		--domain-order: 3;
-		--phone-order: 2;
-
 		font-size: 18px;
 	}
 
 }
 
 @include screen-until($tablet){
-	
+	// on mobile
 	:root{
 
 		--container-max-size: #{$container-mobile};
-		// header
-		--banner-height: 200px;
-
 		font-size: 14px;
 	}
 

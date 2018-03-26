@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+	display: none;
 
 	&__background{
 
@@ -33,6 +33,7 @@
 		background-color: $white;
 		padding: 1rem;
 		border-radius: .5rem;
+		animation: fadeDown .318s ease-out;
 	}
 
 	&__head{
@@ -88,7 +89,7 @@
 	}
 
 	&--active{
-
-		visibility: visible;
+		
+		display: flex;
 	}
 }

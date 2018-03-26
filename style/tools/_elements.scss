@@ -1,0 +1,6 @@
+
+@mixin container{
+
+  margin: auto;
+  max-width: var(--container-max-size);
+}
