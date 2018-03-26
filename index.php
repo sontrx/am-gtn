@@ -20,9 +20,7 @@
 
     <?php include 'blocks/header.html'; ?>
     <?php include 'blocks/info.html'; ?>
-    <!-- Import speaker -->
     <?php include 'blocks/speaker.html'; ?>
-    <!-- Import kols network -->
     <?php include 'blocks/kols.html'; ?>
     <?php include 'blocks/registry.html'; ?>
     <?php include 'blocks/footer.html'; ?>
@@ -36,6 +34,12 @@
   <script type="text/javascript" src="js/main.js"></script>
   <!-- Js index -->
   <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- speaker slider js -->
+  <script type="text/javascript" src="js/RSwiper.js"></script>
+  
+  <!-- kols slider js -->
+  <script type="text/javascript" src="js/kolsslider.js"></script>
 	
 </body>
 
