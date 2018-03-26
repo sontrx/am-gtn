@@ -1,304 +1,96 @@
-<section class="hero is-primary is-large" style="margin-top: 200px">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Primary title
-      </h1>
-      <h2 class="subtitle">
-        Primary subtitle
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section id="pageloaders" style="margin: 50px 0;">
+<section class="card-container">
   
-  <div class="container">
+  <article class="c-card">
+    
+    <header class="c-card__header">
+      <img src="http://placehold.it/350x200"  class="c-card__image" alt="Card Image" />
+    </header>
 
-    <div class="col-md-10 center">
-        <div class="row">
-
-            <div class="text-center">
-                <h2 class="text-medium">Page Loaders</h2>
-                <p class="lead m-b-40">You can easily change page loaders in your website, simply by adding in body tag data-animation-icon="1" attribute and choose it from 1 to 20 styles.</p>
-
-            </div>
-
-        </div>
+    <div class="c-card__body">
+      <h2 class="c-card__title">
+        Card
+      </h2>
+      <p class="c-card__subtitle">
+        initial component
+      </p>
+      
+      <p class="c-card__intro">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      </p>
+      
     </div>
-    <style>
-        .loaders {
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            flex: 0 1 auto;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        .loaders .loader {
-            box-sizing: border-box;
-            display: flex;
-            flex: 0 1 auto;
-            flex-direction: column;
-            flex-grow: 1;
-            flex-shrink: 0;
-            flex-basis: 25%;
-            max-width: 25%;
-            height: 200px;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .ball-grid-pulse > div {
-            background: #D86199 !important;
-        }
-        
-        .square-spin > div {
-            background: #803314 !important;
-        }
-        
-        .ball-rotate > div,
-        .ball-rotate > div:after,
-        .ball-rotate > div:before {
-            background: #FB7302 !important;
-        }
-        
-        .cube-transition > div {
-            background: #475175 !important;
-        }
-        
-        .ball-zig-zag > div {
-            background: #E62220 !important;
-        }
-        
-        .ball-triangle-path > div {
-            background: #F68142 !important;
-        }
-        
-        .line-scale > div {
-            background: #00AC93 !important;
-        }
-        
-        .ball-scale-multiple > div {
-            background: #71B3D0 !important;
-        }
-        
-        .ball-pulse-sync > div {
-            background: #10345B !important;
-        }
-        
-        .ball-beat > div {
-            background: #CC3433 !important;
-        }
-        
-        .line-scale-pulse-out-rapid > div {
-            background: #999999 !important;
-        }
-        
-        .ball-scale-ripple > div {
-            background: #00349A !important;
-        }
-        
-        .ball-scale-ripple-multiple > div {
-            border: 2px solid #9ACCCD;
-        }
-        
-        .ball-spin-fade-loader > div {
-            background: #00349A !important;
-        }
-        
-        .line-spin-fade-loader > div {
-            background: #00639A !important;
-        }
-        
-        .pacman > div:nth-child(3),
-        .pacman > div:nth-child(4),
-        .pacman > div:nth-child(5),
-        .pacman > div:nth-child(6) {
-            background-color: #2192B2;
-        }
-        
-        .pacman > div:first-of-type,
-        .pacman > div:nth-child(2) {
-            border-color: #2192B2 transparent #2192B2 #2192B2;
-        }
-        
-        .ball-grid-beat > div {
-            background: #636FAB !important;
-        }
 
-    </style>
+    <footer class="c-card__footer">
+      Footer
+    </footer>
 
-    <!-- Modal Strips buttons -->
-    <div class="loaders">
+  </article>
+  
+  <article class="c-card c-card--center">
+    
+    <header class="c-card__header">
+      <img src="http://placehold.it/350x200" class="c-card__image" alt="Card Image" />
+    </header>
 
-        <div class="loader">
-            <div class="material-icon">
-                <div class="spinner">
-                    <div class="right-side">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="left-side">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner ball-grid-pulse">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader01"></div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner square-spin">
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader04"></div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-rotate">
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner cube-transition">
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-zig-zag">
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner ball-triangle-path">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner line-scale">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner ball-scale-multiple">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-pulse-sync">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-beat">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner line-scale-pulse-out-rapid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-scale-ripple-multiple">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner ball-spin-fade-loader">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="loader-inner line-spin-fade-loader">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner pacman">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="loader">
-            <div class="loader-inner ball-grid-beat">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="single9"></div>
-        </div>
+    <div class="c-card__body">
+      <h2 class="c-card__title">
+        card--center
+      </h2>
+      <p class="c-card__subtitle">
+        center modifier
+      </p>
+      
+      <p class="c-card__intro">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      </p>
     </div>
-    <!-- end: Modal Strips buttons -->
 
-</div>
+    <footer class="c-card__footer">
+      Footer
+    </footer>
 
+  </article>
+  
+  <article class="c-card c-card--wide">
+    
+    <header class="c-card__header">
+      <img src="http://placehold.it/300x250"  class="c-card__image" alt="Card Image" />
+    </header>
+
+    <div class="c-card__body">
+      <h2 class="c-card__title">
+        card-wide
+      </h2>
+      <p class="c-card__subtitle">
+        wide-modifier
+      </p>
+      <p class="c-card__intro">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      </p>
+    </div>
+
+    <footer class="c-card__footer">
+      Footer
+    </footer>
+
+  </article>
+  
+  <article class="c-card-flip">
+    <div class="c-card-flip__flipper">
+      
+      <div class="c-card-flip__front">
+         <img src="http://via.placeholder.com/450x250"  class="c-card-flip__image" alt="Card Image" />
+      </div>
+      
+      <div class="c-card-flip__back">
+        <h3 class="c-card-flip__title">
+          Hi there, how are you today ?
+          <br>
+          This is a separated card-flip component :)
+        </h3>
+      </div>
+      
+    </div>
+  </article>
+  
 </section>
-

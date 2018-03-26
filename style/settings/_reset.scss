@@ -1,0 +1,44 @@
+
+*:focus {
+    outline: none;
+}
+
+@font-face {
+	font-family: 'AvenyT';
+	src: url(../font/AvenyTLight.ttf);
+}
+
+@font-face {
+	font-family: 'AvenyTMedium';
+	src: url(../font/AvenyTMedium.ttf);
+}
+
+@font-face {
+	font-family: 'AvenyTRegular';
+	src: url(../font/AvenyTRegular.ttf);
+}
+
+@font-face {
+	font-family: 'GilroyLight';
+	src: url(../font/SVN-GilroyLight.otf);
+}
+
+@font-face {
+	font-family: 'GilroyBold';
+	src: url(../font/SVN-GilroyBold.otf);
+}
+
+body{
+	margin: 0;
+	background: url(../images/background.png);
+	background-size: cover;
+	font-family: 'GilroyLight', arial, helvetica, sans-serif;
+}
+
+h1,h2 {
+	font-family: 'AvenyT', sans-serif;
+}
+
+.font-gilroy-bold {
+	font-family: 'GilroyBold', sans-serif;
+}
