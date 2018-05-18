@@ -15,7 +15,7 @@
   
   <!-- Wrapper  -->
   <div id="wrapper">
-
+    hello!
     <?php include 'blocks/section.html'; ?>
 
   </div>
