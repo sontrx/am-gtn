@@ -1,6 +1,13 @@
 
 @mixin container{
 
-  margin: auto;
-  max-width: var(--container-max-size);
+	margin: auto;
+	max-width: var(--container-max-size);
+}
+
+@mixin icon-box{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
