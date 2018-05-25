@@ -28,31 +28,4 @@ $text-black: #3c3c3c;
 $text-light: #7d7d7d;
 
 
-// settings
-
-:root{
-	
-	--container-max-size: #{$container-desktop};
-	font-size: 20px;
-}
-
-@include screen-until($desktop){
-	// on tablet
-	:root{
-
-		--container-max-size: #{$container-tablet};
-		font-size: 18px;
-	}
-
-}
-
-@include screen-until($tablet){
-	// on mobile
-	:root{
-
-		--container-max-size: #{$container-mobile};
-		font-size: 14px;
-	}
-
-}
 
