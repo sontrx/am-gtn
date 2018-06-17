@@ -1,6 +1,0 @@
-
-// drop all plugins here
-
-
-
-
