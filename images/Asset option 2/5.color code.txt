@@ -1,0 +1,6 @@
+Header bar: #f4f4f4
+Hover 1: #d6efcc
+Hover 2: #679f37
+Menu color: #7abc42
+Button color: #16743a
+Button Hover color: #679f37
