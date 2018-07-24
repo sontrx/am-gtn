@@ -8,30 +8,51 @@
 }
 
 // font setting
-// @font-face {
-// 	font-family: 'AvenyT';
-// 	src: url(../font/AvenyTLight.ttf);
-// }
+@font-face {
+	font-family: 'GoTham Bold';
+	src: url(../fonts/SVN-GothamBold.ttf);
+}
+
+@font-face {
+	font-family: 'GoTham Light';
+	src: url(../fonts/SVN-GothamLight.ttf);
+}
 
 body{
 
 	margin: 0;
-	// font-family: 'GilroyLight', arial, helvetica, sans-serif;
+	font-family: 'GoTham Light', arial, helvetica, sans-serif;
+}
+
+.h1 {
+	font-size: 30pt;
+}
+
+.h2 {
+	font-size: 24pt;
+}
+
+.h3 {
+	font-size: 14pt;
+}
+
+.h4 {
+	font-size: 12pt;
 }
 
 // settings
 :root{
 	
-	--container-max-size: #{$container-desktop};
-	font-size: 20px;
+	// --container-max-size: #{$container-desktop};
+	font-size: 24px;
 }
 
 @include screen-until($desktop){
 	// on tablet
 	:root{
 
-		--container-max-size: #{$container-tablet};
-		font-size: 18px;
+		// --container-max-size: #{$container-tablet};
+		font-size: 14px;
 	}
 
 }
@@ -40,8 +61,8 @@ body{
 	// on mobile
 	:root{
 
-		--container-max-size: #{$container-mobile};
-		font-size: 14px;
+		// --container-max-size: #{$container-mobile};
+		font-size: 12px;
 	}
 
 }

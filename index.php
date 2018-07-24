@@ -14,7 +14,10 @@
   <!-- Wrapper  -->
   <div id="wrapper">
 
-    <?php include 'blocks/section.html'; ?>
+    <?php include 'blocks/navbar.html'; ?>
+    <?php include 'blocks/header-slide.html'; ?>
+    <?php include 'blocks/sections.html'; ?>
+    <?php include 'blocks/footer.html'; ?>
 
   </div>
   <!-- End wrapper -->
