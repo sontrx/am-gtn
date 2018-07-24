@@ -1,12 +1,136 @@
 
 .sections{
 
-	.section{
+	.section{	
+
+		position: relative;
+		color: inherit;
 
 		&__wrapper{
+			
+			display: block;
 
-			@include frame
 		}
+
+		&__image{
+
+			@include img();
+		}
+
+		&.section--group10{
+
+			.section__wrapper{
+
+				@include frame(666/493, 100%);
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				top: 40px;
+				left: 40px;
+			}
+		}
+
+		&.section--group7{
+
+			.section__wrapper{
+
+				@include frame(653/493, 100%);
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+		}
+		
+		&.section--group9{
+
+			.section__wrapper{
+
+				@include frame(502/310, 100%);
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				top: 40px;
+				left: 40px;
+			}
+		}
+
+		&.section--group8{
+
+			.section__wrapper{
+
+				@include frame(502/310, 100%);
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+		}
+
+		&.section--group5{
+
+			.section__wrapper{
+
+				@include frame(332/619, 100%);
+				height: 100%;
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+		}
+
+		&.section--group6{
+
+			.section__wrapper{
+
+				@include frame(349/619, 100%);
+
+			}
+
+			.section__title{
+
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+		}
+
 	}
+
+
 }
+
+.no-padding{
+
+	padding: 0!important;
+}
+
+.no-margin{
+
+	margin: 0!important;
+}
+
+
+
+
+
 
