@@ -37,7 +37,7 @@
 
 			.section__wrapper{
 
-				@include frame(653/493, 100%);
+				@include frame(652/493, 100%);
 
 			}
 
@@ -114,7 +114,91 @@
 			}
 		}
 
+		&__effect-top,&__effect-bottom{
+
+			height: 10px;
+			background-color: $green;
+			position: absolute;
+			display: block;
+			z-index: 10;
+			width: 0%;
+
+		}
+
+		&__effect-left,&__effect-right{
+
+			width: 10px;
+			background-color: $green;
+			position: absolute;
+			display: block;
+			z-index: 1000;
+			height: 0%;
+
+		}
+
+		&__effect-top{
+
+			top: 0;
+			transition: all .25s ease-in 0.75s;
+		}
+
+		&__effect-bottom{
+
+			bottom: 0;
+			transition: all .25s ease-in 0.25s;
+		}
+
+		&__effect-left{
+
+			left: 0;
+			bottom: 0;
+			transition: all .25s ease-in 0s;
+		}
+
+		&__effect-right{
+
+			right: 0;
+			top:0;
+			transition: all .25s ease-in 0.5s;
+		}
+
+		&:hover{
+
+			.section__effect-top{
+
+				top: 0;
+				width: 100%;
+				transition: all .25s ease-in 0s;
+			}
+
+			.section__effect-bottom{
+
+				bottom: 0;
+				width: 100%;
+				transition: all .25s ease-in .5s;
+
+			}
+
+			.section__effect-left{
+
+				left: 0;
+				bottom: 0;
+				height: 100%;
+				transition: all .25s ease-in .75s;
+			}
+
+			.section__effect-right{
+
+				right: 0;
+				top:0;
+				height: 100%;
+				transition: all .25s ease-in 0.25s;
+			}
+		}
+
 	}
+
+
 
 
 }
