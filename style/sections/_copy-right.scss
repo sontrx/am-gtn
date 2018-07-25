@@ -1,0 +1,21 @@
+.copy-right {
+
+	background: $green-button;
+	color: $grey;
+	font-size: 12px;
+	
+	&_list {
+
+		text-align: right;
+
+		a {
+
+			color: $grey;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+}

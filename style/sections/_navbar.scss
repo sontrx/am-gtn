@@ -1,7 +1,12 @@
 .myMenu {
+
 	background: $grey;
 	min-height: 60px;
-
+	position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    height: 90px;
 
 	a {
 		color: $text-light;
@@ -12,7 +17,7 @@
 	}
 
 	.dropdown-menu {
-		right: 15px;
+		right: 0;
 		left: auto;
 	}
 

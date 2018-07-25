@@ -1,4 +1,5 @@
 .header-index {
+	padding-top: 90px;
 	
 	.carousel {
 
@@ -16,7 +17,7 @@
 		&-inner {
 
 			.carousel-item {
-				height: 35vw;
+				height: 65vh;
 				background-size: cover;
 				background-position: center;
 			}
@@ -48,19 +49,34 @@
 
 		&-caption {
 
-			left: 4%;
-			right: 60%;
-			text-align: left;
+			bottom: 15px;
 			text-shadow: 1px 1px 1px $black;
-			/* Safari 4.0 - 8.0 */
-		    -webkit-animation-name: bottom-top;
-		    -webkit-animation-duration: 0.8s;
-		    -webkit-animation-timing-function: ease-in;
-		    /* Standard syntax */
-		    animation-name: bottom-top;
-		    animation-duration: 0.8s;
-		    animation-timing-function: ease-in;
+		}
 
+		@media(min-width: 768px) {
+			&-caption {
+				left: 4%;
+				right: 60%;
+				text-align: left;
+				/* Safari 4.0 - 8.0 */
+			    -webkit-animation-name: bottom-top;
+			    -webkit-animation-duration: 0.8s;
+			    -webkit-animation-timing-function: ease-in;
+			    /* Standard syntax */
+			    animation-name: bottom-top;
+			    animation-duration: 0.8s;
+			    animation-timing-function: ease-in;
+			}
+		}
+
+		@media(max-width: 767px) {
+			&-caption {
+				bottom: 55%;
+			}
+
+			.h1 {
+				font-size: 22pt;
+			}
 		}
 
 	}

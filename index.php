@@ -18,6 +18,7 @@
     <?php include 'blocks/header-slide.html'; ?>
     <?php include 'blocks/sections.html'; ?>
     <?php include 'blocks/footer.html'; ?>
+    <?php include 'blocks/copy-right.html'; ?>
 
   </div>
   <!-- End wrapper -->
