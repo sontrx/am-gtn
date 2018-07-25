@@ -1,0 +1,68 @@
+.header-index {
+	
+	.carousel {
+
+		&-indicators{
+
+			bottom: 10%;
+
+			li {
+				height: 4px;
+				width: 40px;
+			}
+
+		}
+
+		&-inner {
+
+			.carousel-item {
+				height: 35vw;
+				background-size: cover;
+				background-position: center;
+			}
+
+		}
+
+		&-control {
+
+			bottom: 10%;
+			right: 10%;
+			z-index: 99;
+
+			&_prev, &_next {
+				padding: 1vw;
+
+				&:hover {
+					filter: brightness(85%);
+				}
+			}
+
+			&_prev {
+				border-radius: 5% 40%;
+			}
+
+			&_next {
+				border-radius: 40% 5%;
+			}
+		}
+
+		&-caption {
+
+			left: 4%;
+			right: 60%;
+			text-align: left;
+			text-shadow: 1px 1px 1px $black;
+			/* Safari 4.0 - 8.0 */
+		    -webkit-animation-name: bottom-top;
+		    -webkit-animation-duration: 0.8s;
+		    -webkit-animation-timing-function: ease-in;
+		    /* Standard syntax */
+		    animation-name: bottom-top;
+		    animation-duration: 0.8s;
+		    animation-timing-function: ease-in;
+
+		}
+
+	}
+
+}

@@ -1,0 +1,137 @@
+.myMenu {
+	background: $grey;
+	min-height: 60px;
+
+
+	a {
+		color: $text-light;
+	}
+
+	ul > li > .nav-link {
+		padding: 1.4rem!important;
+	}
+
+	.dropdown-menu {
+		right: 15px;
+		left: auto;
+	}
+
+	&-right {
+
+		flex-direction: row!important;
+
+		.search {
+			font-size: 24px;
+		}
+
+		.icon-menu {
+			position: relative;
+			height: 24px;
+			width: 30px;
+		}
+
+		.icon-bar {
+			display: block;
+			width: 30px;
+			height: 3px;
+			background: linear-gradient(to right, $green-light , $green-dark);
+			transition: 0.3s;
+		}
+
+		.icon-bar {
+			margin-top: 5px;
+		}
+
+		li.show {
+			background: $green;
+
+			.search {
+				color: $white;
+			}
+
+			.icon-menu {
+
+				.icon-bar {
+					background: $white;
+					position: absolute;
+					top: 30%;
+    				
+    				&:nth-child(2n) {
+    					transform: rotate(45deg);
+    				}
+
+    				&:nth-child(2n+1) {
+    					transform: rotate(-45deg);
+    				}
+				}
+			}
+		}
+
+		.dropdown-menu {
+			background: $green;
+			color: $white;
+
+			a {
+				color: $white;
+			}
+
+		}
+
+		&_menu {
+
+			a {
+
+				padding-top: 10px;
+				padding-bottom: 10px;
+
+				img {
+					filter: brightness(80%);
+					transform: translateY(-5px);
+				}
+
+				&:hover {
+					background-color: $green-hover;
+					color: $white;
+					font-weight: 900;
+
+					img {
+						filter: none;
+					}
+					
+				}
+			}
+
+			a.active {
+
+				background: none;
+				font-weight: 900;
+
+				img {
+					filter: none;
+				}
+
+			}
+
+		}
+
+		&_search {
+
+			form {
+
+				border: 1px solid $white;
+				border-radius: 20px 0;
+
+				input {
+					background: transparent;
+					border: none;
+					padding: 0 10px;
+					color: white;
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -24,6 +24,10 @@ body{
 	font-family: 'GoTham Light', arial, helvetica, sans-serif;
 }
 
+.h1, .h2, .h3 {
+	font-family: 'GoTham Bold';
+}
+
 .h1 {
 	font-size: 30pt;
 }
@@ -44,7 +48,7 @@ body{
 :root{
 	
 	// --container-max-size: #{$container-desktop};
-	font-size: 24px;
+	font-size: 16px;
 }
 
 @include screen-until($desktop){
@@ -67,4 +71,18 @@ body{
 
 }
 
+// animation 
 
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes bottom-top {
+	    0%   {bottom: -70px; z-index: -1}
+	    50%   {bottom: -70px; z-index: 1}
+	    100% {bottom: 20px}
+	}
+
+	/* Standard syntax */
+	@keyframes bottom-top {
+	    0%   {bottom: -70px; z-index: -1}
+	    50%   {bottom: -70px; z-index: 1}
+	    100% {bottom: 20px}
+	}
