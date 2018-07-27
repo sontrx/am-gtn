@@ -62,9 +62,6 @@
 			height: 3px;
 			background: linear-gradient(to right, $green-light , $green-dark);
 			transition: 0.3s;
-		}
-
-		.icon-bar {
 			margin-top: 5px;
 		}
 
@@ -93,7 +90,7 @@
 				.dropdown-submenu {
 					display: none;
 					margin-top: 5px;
-					border-top: 1px solid $white;
+					border-top: 1px solid $border;
 
 					a {
 						text-decoration: none;
@@ -103,7 +100,7 @@
 					.submenu-item {
 						padding: 5px 0;
 						padding-left: 10%;
-						border-bottom: 1px solid $white;
+						border-bottom: 1px solid $border;
 						transition: 0.3s;
 						font-size: 13px;
 
