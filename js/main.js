@@ -53,3 +53,8 @@ $(document).ready(function() {
     });
 });
 
+// show submenu
+$('.dropdown-item').click(function() {
+    $('.dropdown-submenu').hide();
+    $(this).find('.dropdown-submenu').toggle();
+});

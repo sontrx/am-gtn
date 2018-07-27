@@ -16,17 +16,38 @@
 		padding: 1.4rem!important;
 	}
 
-	.dropdown-menu {
-		right: 0;
-		left: auto;
-	}
-
 	&-right {
 
 		flex-direction: row!important;
 
 		.search {
 			font-size: 24px;
+		}
+
+		&_icon:hover {
+			background: $green;
+
+			.dropdown-menu {
+				display: block;
+			}
+
+			.icon-menu {
+
+				.icon-bar {
+					background: $white;
+					position: absolute;
+					top: 30%;
+    				
+    				&:nth-child(2n) {
+    					transform: rotate(45deg);
+    				}
+
+    				&:nth-child(2n+1) {
+    					transform: rotate(-45deg);
+    				}
+				}
+			}
+
 		}
 
 		.icon-menu {
@@ -47,55 +68,83 @@
 			margin-top: 5px;
 		}
 
-		li.show {
+		.nav-item.show {
 			background: $green;
 
 			.search {
 				color: $white;
-			}
-
-			.icon-menu {
-
-				.icon-bar {
-					background: $white;
-					position: absolute;
-					top: 30%;
-    				
-    				&:nth-child(2n) {
-    					transform: rotate(45deg);
-    				}
-
-    				&:nth-child(2n+1) {
-    					transform: rotate(-45deg);
-    				}
-				}
 			}
 		}
 
 		.dropdown-menu {
 			background: $green;
 			color: $white;
+			right: 0;
+			left: auto;
+			min-width: 29%;
 
-			a {
+			.dropdown-item {
+				background-color: $green;
 				color: $white;
-			}
-
-		}
-
-		&_menu {
-
-			a {
-
 				padding-top: 10px;
 				padding-bottom: 10px;
+				cursor: pointer;
+
+				.dropdown-submenu {
+					display: none;
+					margin-top: 5px;
+					border-top: 1px solid $white;
+
+					a {
+						text-decoration: none;
+    					color: $green-light;
+					}
+
+					.submenu-item {
+						padding: 5px 0;
+						padding-left: 10%;
+						border-bottom: 1px solid $white;
+						transition: 0.3s;
+						font-size: 13px;
+
+						&_icon {
+							display: none;
+							left: 5px;
+						}
+
+						&:hover {
+							padding-left: 12%;
+							color: $white;
+
+							.submenu-item_icon {
+								display: block;
+							}
+						}
+					}
+				}
 
 				img {
 					filter: brightness(80%);
 					transform: translateY(-5px);
 				}
 
+				&_icon {
+					right:2%;
+				}
+
+				&.active {
+
+					background: none;
+					font-weight: 900;
+
+					img {
+						filter: none;
+					}
+
+				}
+
 				&:hover {
-					background-color: $green-hover;
+					background-color: $green-dark;
 					color: $white;
 					font-weight: 900;
 
@@ -103,16 +152,6 @@
 						filter: none;
 					}
 					
-				}
-			}
-
-			a.active {
-
-				background: none;
-				font-weight: 900;
-
-				img {
-					filter: none;
 				}
 
 			}
