@@ -78,7 +78,7 @@
 			color: $white;
 			right: 0;
 			left: auto;
-			min-width: 29%;
+			min-width: 320px;
 
 			.dropdown-item {
 				background-color: $green;
@@ -99,7 +99,7 @@
 
 					.submenu-item {
 						padding: 5px 0;
-						padding-left: 10%;
+						padding-left: 6%;
 						border-bottom: 1px solid $border;
 						transition: 0.3s;
 						font-size: 13px;
@@ -110,7 +110,7 @@
 						}
 
 						&:hover {
-							padding-left: 12%;
+							padding-left: 9%;
 							color: $white;
 
 							.submenu-item_icon {
