@@ -3,10 +3,11 @@
 	background: $grey;
 	min-height: 60px;
 	position: fixed;
-    z-index: 9999;
+    z-index: 10000;
     left: 0;
     right: 0;
     height: 90px;
+    padding: 0;
 
 	a {
 		color: $text-light;
@@ -19,12 +20,13 @@
 	&-right {
 
 		flex-direction: row!important;
+		cursor: pointer;
 
 		.search {
 			font-size: 24px;
 		}
 
-		&_icon:hover {
+		&_icon.show {
 			background: $green;
 
 			.dropdown-menu {
@@ -78,7 +80,7 @@
 			color: $white;
 			right: 0;
 			left: auto;
-			min-width: 320px;
+			min-width: 325px;
 
 			.dropdown-item {
 				background-color: $green;
@@ -126,7 +128,13 @@
 				}
 
 				&_icon {
-					right:2%;
+					right:3%;
+					line-height: 25px;
+    				font-size: 12px;
+				}
+
+				&_icon:nth-child(2n) {
+					display: none;
 				}
 
 				&.active {
@@ -175,4 +183,12 @@
 
 	}
 
+}
+
+.background-overlay_menu {
+	position: fixed;
+	top: 0; left:0; bottom: 0; right: 0;
+	background: transparent;
+	z-index: 9999;
+	display: none;
 }

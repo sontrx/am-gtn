@@ -53,8 +53,20 @@ $(document).ready(function() {
     });
 });
 
-// show submenu
-$('.dropdown-item').click(function() {
-    $('.dropdown-submenu').hide();
-    $(this).find('.dropdown-submenu').toggle();
+// show menu
+$('.myMenu-right_icon-button').click(function() {
+    $(this).parent().toggleClass('show');
+    $('.background-overlay_menu').toggle();
 });
+
+$('.background-overlay_menu').click(function() {
+    $(this).toggle();
+    $('.myMenu-right_icon').toggleClass('show');
+});
+
+$('.dropdown-item').click(function() {
+    $(this).find('.dropdown-submenu, .dropdown-item_icon').toggle();
+    $(this).siblings().find('.dropdown-submenu, .dropdown-item_icon:nth-child(2n)').hide();
+    $(this).siblings().find('.dropdown-item_icon:nth-child(2n+1)').show();
+});
+
