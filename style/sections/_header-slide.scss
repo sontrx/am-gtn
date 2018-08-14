@@ -1,5 +1,5 @@
 .header-index {
-	padding-top: 90px;
+	padding-top: 0px;
 	
 	.carousel {
 
@@ -18,7 +18,7 @@
 		&-inner {
 
 			.carousel-item {
-				height: 65vh;
+				height: 100vh;
 				background-size: cover;
 				background-position: center;
 			}
@@ -50,7 +50,7 @@
 
 		&-caption {
 
-			bottom: 15px;
+			bottom: 5vh;
 			text-shadow: 1px 1px 1px $black;
 		}
 
