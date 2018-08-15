@@ -6,15 +6,17 @@
     z-index: 10000;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 75px;
     padding: 0;
 
 	a {
 		color: $text-light;
+		text-decoration: none;
 	}
 
 	ul > li > .nav-link {
 		padding: 1.4rem!important;
+		height: 100%;
 	}
 
 	&-right {
@@ -23,11 +25,10 @@
 		cursor: pointer;
 
 		.search {
-			font-size: 24px;
+			max-height: 23px;
 		}
 
 		&_icon.show {
-			background: $green;
 
 			.dropdown-menu {
 				display: block;
@@ -36,7 +37,6 @@
 			.icon-menu {
 
 				.icon-bar {
-					background: $white;
 					position: absolute;
 					top: 30%;
     				
@@ -67,94 +67,104 @@
 			margin-top: 5px;
 		}
 
-		.nav-item.show {
-			background: $green;
-
-			.search {
-				color: $white;
-			}
-		}
-
 		.dropdown-menu {
-			background: $green;
-			color: $white;
+			color: $green;
 			right: 0;
-			left: auto;
-			min-width: 325px;
+			left: 0;
+			border: none;
+			padding: 0 15px;
 
-			.dropdown-item {
-				background-color: $green;
-				color: $white;
-				padding-top: 10px;
-				padding-bottom: 10px;
+			.dropdown-myitem {
+				background-color: $white;
+				color: #959595;
+				padding: 20px 5px 15px;
 				cursor: pointer;
+				float: left;
+				font-size: 10pt;
+				font-weight: bold;
+				transition: 0.3s;
+				border-bottom: 3px solid $white;
 
 				.dropdown-submenu {
+
 					display: none;
-					margin-top: 5px;
-					border-top: 1px solid $border;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 104%;
+					font-size: 12pt;
+					background: $white;
+					text-align: center;
+					border-radius: 0 0 5px 5px;
+					color: #6a6a6a;
 
 					a {
 						text-decoration: none;
-    					color: $green-light;
+						color: #6a6a6a;
 					}
 
 					.submenu-item {
-						padding: 5px 0;
-						padding-left: 6%;
-						border-bottom: 1px solid $border;
+						padding: 10px;
+						border-bottom: 1px solid $grey;
 						transition: 0.3s;
-						font-size: 13px;
+						position: relative;
 
 						&_icon {
 							display: none;
-							left: 5px;
+							right: 5px;
+							top: 35%;
 						}
 
 						&:hover {
-							padding-left: 9%;
-							color: $white;
+							
+							background: $green;
+
+							> a {
+								color: #f4f4f4;
+							}
 
 							.submenu-item_icon {
 								display: block;
 							}
+
+							> .dropdown-submenu {
+								display: block;
+							}
 						}
+
+						&:last-child {
+							border: none;
+						}
+
+						.dropdown-submenu {
+							left: 100%;
+						    right: auto;
+						    top: 0;
+						    min-width: 230px;
+
+						    li:hover {
+						    	a {
+						    	 color: #f4f4f4;
+						    	}
+						    }
+						}
+
 					}
+
 				}
 
 				img {
-					filter: brightness(80%);
-					transform: translateY(-5px);
-				}
-
-				&_icon {
-					right:3%;
-					line-height: 25px;
-    				font-size: 12px;
-				}
-
-				&_icon:nth-child(2n) {
-					display: none;
-				}
-
-				&.active {
-
-					background: none;
-					font-weight: 900;
-
-					img {
-						filter: none;
-					}
-
+					padding-bottom: 5px;
+					height: 4vh;
 				}
 
 				&:hover {
-					background-color: $green-dark;
-					color: $white;
-					font-weight: 900;
+					color: $green;
+					border-color: $green;
+					background: linear-gradient(to bottom, $white 80%, rgba(122, 188, 66, 0.3));
 
-					img {
-						filter: none;
+					> .dropdown-submenu {
+						display: block;
 					}
 					
 				}
@@ -167,20 +177,33 @@
 
 			form {
 
-				border: 1px solid $white;
-				border-radius: 20px 0;
-
 				input {
-					background: transparent;
 					border: none;
-					padding: 0 10px;
-					color: white;
+					padding: 15px 5%;
+					color: #959595;
+					width: 100%;
+					font-size: 30pt;
 				}
 
 			}
 
 		}
 
+	}
+
+	.submenu-dot {
+		width: 15px;
+	    height: 15px;
+	    top: 90%;
+	    background: $white;
+	    z-index: 10;
+	    right: 40%;
+	    transform: rotate(45deg);
+	    display: none;
+	}
+
+	.show .submenu-dot {
+		display: block;
 	}
 
 }

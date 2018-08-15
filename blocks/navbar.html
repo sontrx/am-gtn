@@ -3,7 +3,7 @@
   <div class="container position-relative p-0">
 
       <a class="navbar-brand pl-2" href="./">
-        <img src="images/Logo-GTNFood.png">
+        <img src="images/Logo-GTNFood.png" height="60px">
       </a>
 
       <ul class="myMenu-right navbar-nav ml-auto">
@@ -20,18 +20,19 @@
 
         </li>
 
+        <!-- search -->
         <li class="nav-item">
 
-          <a class="nav-link" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="search fa fa-search"></i>
-          </a>
+          <div class="nav-link position-relative" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="search" src="images/icon/search.png">
+            <div class="submenu-dot position-absolute"></div>
+          </div>
 
-          <div class="dropdown-menu position-absolute mt-0 myMenu-right_search p-3" aria-labelledby="searchDropdown">
+          <div class="dropdown-menu position-absolute mt-0 myMenu-right_search" aria-labelledby="searchDropdown">
 
-            <form class="form-inline p-2">
+            <form class="form-inline">
 
-              <label>Search : </label>
-              <input class=" mr-sm-2" type="search" aria-label="Search">
+              <input class="" type="search" aria-label="Search" placeholder="Search something...">
               
             </form>
 
@@ -42,264 +43,420 @@
         <li class="nav-item myMenu-right_icon">
 
           <!-- icon menu -->
-          <div class="nav-link myMenu-right_icon-button" href="#" role="button" >
+          <div class="nav-link myMenu-right_icon-button position-relative" href="#" role="button" >
             <div class="d-inline-block icon-menu">
               <i class="icon-bar"></i>
               <i class="icon-bar"></i>
               <i class="icon-bar"></i>
             </div>
+
+            <div class="submenu-dot position-absolute"></div>
           </div>
 
           <!-- list menu -->
           <div class="dropdown-menu position-absolute mt-0 myMenu-right_menu">
 
-            <!-- home -->
-            <a class="dropdown-item" href="./">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/home.png">
+            <div class="row align-items-center">
+
+              <!-- home -->
+              <a class="col dropdown-myitem" href="./">
+
+                  <div class="text-center">
+                    <img src="images/icon/home.png">
+                    <p class="m-0">HOME</p>
+                  </div>
+
+              </a>
+
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
+
+                <div class="text-center">
+                  <img src="images/icon/introduction.png">
+                  <p class="m-0">INTRODUCTION</p>
                 </div>
-                <div class="col-10">Home</div>
-              </div>
-            </a>
 
-            <!-- menu item -->
-            <div class="dropdown-item">
+                <!-- submenu level 1 -->
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/leaf.png">
-                </div>
-                <div class="col-10">Introducing GTNfoods</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
+                  <li class="submenu-item">
+                    
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      GTNfoods Path
+                    </a>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    GTNfoods's Path
-                  </li></a>
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Vision, Mission, Core Values
-                  </li></a>
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    GTNfoods's Brand Story
-                  </li></a>
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Governance System
-                  </li></a>
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Development Strategy
-                  </li></a>
+                    </ul>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Achievements
-                  </li></a>
+                  </li>
+
+                  <li class="submenu-item">
+
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Vision, Mission, Core Values
+                    </a>
+
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
+
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
+
+                    </ul>
+
+                  </li>
+
+                  <li class="submenu-item">
+
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      GTNfoods's Brand Story
+                    </a>
+
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
+
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
+
+                    </ul>
+
+                  </li>
+
+                  <li class="submenu-item">
+
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Governance System
+                    </a>
+
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
+
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
+
+                    </ul>
+
+                  </li>
+
+                  <li class="submenu-item">
+
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Development Strategy
+                    </a>
+
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
+
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
+
+                    </ul>
+
+                  </li>
+
+                  <li class="submenu-item">
+
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Achievements
+                    </a>
+
+                    <!-- submenu level 2 -->
+                    <ul class="dropdown-submenu navbar-nav p-0 text-left">
+
+                      <li class="submenu-item">
+                        <a href="./">Subsidiaries</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Corporate governance model</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Key leaders</a>
+                      </li>
+
+                      <li class="submenu-item">
+                        <a href="./">Company Charter & Management Regulations</a>
+                      </li>
+
+                    </ul>
+
+                  </li>
 
                 </ul>
 
               </div>
 
-            </div>
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
 
-            <!-- menu item -->
-            <div class="dropdown-item">
-
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/cloud.png">
+                <div class="text-center">
+                  <img src="images/icon/business.png">
+                  <p class="m-0">BUSINESS SECTORS</p>
                 </div>
-                <div class="col-10">Business sectors</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Moc Chau Milk
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Moc Chau Milk
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Vinatea
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Vinatea
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Ladofoods
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Ladofoods
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Why Us
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Why Us
+                    </a>
+                  </li>
 
                 </ul>
+
               </div>
 
-            </div>
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
 
-            <!-- menu item -->
-            <div class="dropdown-item">
-
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/bell.png">
+                <div class="text-center">
+                  <img src="images/icon/event.png">
+                  <p class="m-0">EVENT / NEWS</p>
                 </div>
-                <div class="col-10">Event / News</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Press Release
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Press Release
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    GTNfoods on Media
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      GTNfoods on Media
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Photos, Videos
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Photos, Videos
+                    </a>
+                  </li>
 
                 </ul>
+
               </div>
 
-            </div>
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
 
-            <!-- menu item -->
-            <div class="dropdown-item">
-
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/bar-chart.png">
+                <div class="text-center">
+                  <img src="images/icon/investment.png">
+                  <p class="m-0">INVESTMENT</p>
                 </div>
-                <div class="col-10">Investment news</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Information Disclosure
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Information Disclosure
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Reports
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Reports
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Information of Shareholders
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Information of Shareholders
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    General Meeting of Shareholders
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      General Meeting of Shareholders
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    FAQ
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      FAQ
+                    </a>
+                  </li>
 
                 </ul>
+
               </div>
 
-            </div>
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
 
-            <!-- menu item -->
-            <div class="dropdown-item">
-
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/compass.png">
+                <div class="text-center">
+                  <img src="images/icon/sustainability.png">
+                  <p class="m-0">SUSTAINABLE</p>
                 </div>
-                <div class="col-10">Sustainable Development</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    GTNfoods towards Sustainability
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      GTNfoods towards Sustainability
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Environmental Protection
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Environmental Protection
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    CSR
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      CSR
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Sustainability Reports
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Sustainability Reports
+                    </a>
+                  </li>
 
                 </ul>
+
               </div>
 
-            </div>
+              <!-- menu item -->
+              <div class="col dropdown-myitem">
 
-            <!-- menu item -->
-            <div class="dropdown-item">
-
-              <div class="row">
-                <div class="col-2 text-center">
-                  <img src="images/icon/users.png">
+                <div class="text-center">
+                  <img src="images/icon/recruitment.png">
+                  <p class="m-0">RECRUIMENT</p>
                 </div>
-                <div class="col-10">Recruiment</div>
-                <i class="fa fa-plus position-absolute dropdown-item_icon"></i>
-                <i class="fa fa-minus position-absolute dropdown-item_icon"></i>
-              </div>
 
-              <div class="row">
-                <ul class="col-10 offset-2 dropdown-submenu navbar-nav p-0">
+                <ul class="dropdown-submenu navbar-nav p-0">
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Working Environment
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Working Environment
+                    </a>
+                  </li>
 
-                  <a href="./"><li class="submenu-item">
-                    <span class="fa fa-arrow-right submenu-item_icon position-absolute"></span>
-                    Recruitment
-                  </li></a>
+                  <li class="submenu-item">
+                    <a href="./">
+                      <span class="fa fa-angle-right fa-lg submenu-item_icon position-absolute"></span>
+                      Recruitment
+                    </a>
+                  </li>
 
                 </ul>
+
               </div>
 
             </div>
