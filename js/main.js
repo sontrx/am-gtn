@@ -54,14 +54,6 @@ $(document).ready(function(){
 // });
 
 // show menu
-$('.myMenu-right_icon-button').click(function() {
-    $('.background-overlay_menu').toggle();
-});
-
-$('.background-overlay_menu').click(function() {
-    $(this).toggle();
-    $('.myMenu-right_icon').toggleClass('show');
-});
 
 $('.dropdown-item').click(function() {
     $(this).find('.dropdown-submenu').toggle();
