@@ -1,7 +1,7 @@
 
 .sections{
 
-	.section{	
+	.section{
 
 		position: relative;
 		color: inherit;
@@ -16,7 +16,8 @@
 		&__image{
 
 			@include img();
-			transition: transform 0.5s;
+			-webkit-transition: .3s ease-in-out;
+    		transition: .3s ease-in-out;
 		}
 
 		&.section--group10{
@@ -205,6 +206,10 @@
 				top:0;
 				height: 100%;
 				transition: all .25s ease-in 0.25s;
+			}
+
+			.section__image {
+				opacity: 0.6;
 			}
 		}
 
