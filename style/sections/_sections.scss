@@ -227,6 +227,17 @@
 	margin: 0!important;
 }
 
+@include screen-until($tablet){
+
+	.sections{
+
+		.section{
+
+			padding: 7px !important;
+		}
+	}
+}
+
 
 
 
