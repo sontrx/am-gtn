@@ -55,7 +55,6 @@ $(document).ready(function(){
 
 // show menu
 $('.myMenu-right_icon-button').click(function() {
-    $(this).parent().toggleClass('show');
     $('.background-overlay_menu').toggle();
 });
 

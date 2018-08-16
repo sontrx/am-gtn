@@ -18,6 +18,11 @@
 	src: url(../fonts/SVN-GothamLight.ttf);
 }
 
+@font-face {
+	font-family: 'VNF-GoTham';
+	src: url(../fonts/VNF-Gotham-Book.ttf);
+}
+
 body{
 
 	margin: 0;
@@ -33,7 +38,7 @@ body{
 }
 
 .h2 {
-	font-size: 24pt;
+	font-size: 26pt;
 }
 
 .h3 {

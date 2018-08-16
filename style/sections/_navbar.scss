@@ -1,6 +1,6 @@
 .myMenu {
 
-	background: $white;
+	background: $grey;
 	min-height: 60px;
 	position: fixed;
     z-index: 10000;
@@ -8,6 +8,7 @@
     right: 0;
     height: 75px;
     padding: 0;
+    font-family: 'VNF-GoTham', arial, helvetica, sans-serif;
 
 	a {
 		color: $text-light;
