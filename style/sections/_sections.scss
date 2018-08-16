@@ -7,6 +7,7 @@
 
 		position: relative;
 		color: inherit;
+		padding: 7px;
 
 		&__wrapper{
 			
@@ -21,6 +22,8 @@
 		}
 
 		&.section--group10{
+
+			padding-left: 0;
 
 			.section__wrapper{
 
@@ -38,9 +41,11 @@
 
 		&.section--group7{
 
+			padding-left: 0;
+
 			.section__wrapper{
 
-				@include frame(652/493, 100%);
+				@include frame(1.352, 100%);
 
 			}
 
@@ -56,7 +61,7 @@
 
 			.section__wrapper{
 
-				@include frame(502/310, 100%);
+				@include frame(1.65, 100%);
 
 			}
 
@@ -69,6 +74,8 @@
 		}
 
 		&.section--group8{
+
+			padding-right: 0;
 
 			.section__wrapper{
 
@@ -86,6 +93,8 @@
 
 		&.section--group5{
 
+			padding-right: 0;
+
 			.section__wrapper{
 
 				@include frame(332/619, 100%);
@@ -102,6 +111,8 @@
 		}
 
 		&.section--group6{
+
+			padding-right: 0;
 
 			.section__wrapper{
 
