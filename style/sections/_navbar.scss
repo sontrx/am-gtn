@@ -77,8 +77,9 @@
 
 			.dropdown-myitem {
 				background-color: $white;
+				text-align: center;
 				color: #959595;
-				padding: 20px 5px 15px;
+				padding: 20px 0px 15px;
 				cursor: pointer;
 				float: left;
 				font-size: 10pt;
@@ -172,6 +173,22 @@
 
 			}
 
+		}
+
+		@include screen-until($tablet){
+			&_menu.dropdown-menu {
+				left: 15vw;
+				height: 90vh;
+
+				/* Safari 4.0 - 8.0 */
+			    -webkit-animation-name: leftToRight;
+			    -webkit-animation-duration: 0.5s;
+			    -webkit-animation-timing-function: linear;
+			    /* Standard syntax */
+			    animation-name: leftToRight;
+			    animation-duration: 0.5s;
+			    animation-timing-function: linear;
+			}
 		}
 
 		&_search {

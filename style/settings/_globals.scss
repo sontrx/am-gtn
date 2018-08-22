@@ -74,20 +74,8 @@ body{
 		font-size: 12px;
 	}
 
+	.text-mobile-left {
+		text-align: left;
+	}
+
 }
-
-// animation 
-
-	/* Safari 4.0 - 8.0 */
-	@-webkit-keyframes bottom-top {
-	    0%   {bottom: -70px; z-index: -1}
-	    50%   {bottom: -70px; z-index: 1}
-	    100% {bottom: 15px}
-	}
-
-	/* Standard syntax */
-	@keyframes bottom-top {
-	    0%   {bottom: -70px; z-index: -1}
-	    50%   {bottom: -70px; z-index: 1}
-	    100% {bottom: 15px}
-	}

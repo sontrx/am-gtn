@@ -7,3 +7,29 @@
     transform: translateY(0px);
   }
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bottom-top {
+    0%   {bottom: -70px; z-index: -1}
+    50%   {bottom: -70px; z-index: 1}
+    100% {bottom: 15px}
+}
+
+/* Standard syntax */
+@keyframes bottom-top {
+    0%   {bottom: -70px; z-index: -1}
+    50%   {bottom: -70px; z-index: 1}
+    100% {bottom: 15px}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes leftToRight {
+    0%   {left: 80vw; right: -65vw}
+    100% {left: 15vw; right: 0}
+}
+
+/* Standard syntax */
+@keyframes leftToRight {
+    0%   {left: 80vw; right: -65vw}
+    100% {left: 15vw; right: 0}
+}
